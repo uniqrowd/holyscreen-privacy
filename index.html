@@ -1,188 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Holy Screen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HolyScreen – Privacy Policy</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
-                   Arial, sans-serif;
-      background: #f8f9fa;
-      color: #212529;
-      line-height: 1.8;
-    }
-    header {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-      color: #fff;
-      padding: 48px 24px 40px;
-      text-align: center;
-    }
-    header h1 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; }
-    header p  { margin-top: 8px; color: #adb5bd; font-size: 0.9rem; }
-    main {
-      max-width: 760px;
-      margin: 40px auto;
-      padding: 0 20px 60px;
-    }
-    section {
-      background: #fff;
-      border-radius: 12px;
-      padding: 28px 32px;
-      margin-bottom: 20px;
-      box-shadow: 0 1px 4px rgba(0,0,0,.06);
-    }
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #1a1a2e;
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e94560;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    h2 .num {
-      background: #e94560;
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 700;
-      width: 22px; height: 22px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    p  { font-size: 0.95rem; color: #495057; margin-bottom: 10px; }
-    p:last-child { margin-bottom: 0; }
-    ul { padding-left: 18px; }
-    ul li { font-size: 0.95rem; color: #495057; margin-bottom: 6px; }
-    .highlight {
-      background: #f1f3f5;
-      border-left: 4px solid #e94560;
-      border-radius: 4px;
-      padding: 14px 18px;
-      font-size: 0.93rem;
-      color: #343a40;
-    }
-    .badge {
-      display: inline-block;
-      background: #d3f9d8;
-      color: #2b8a3e;
-      font-size: 0.8rem;
-      font-weight: 700;
-      padding: 2px 10px;
-      border-radius: 20px;
-      margin-left: 6px;
-      vertical-align: middle;
-    }
-    footer {
-      text-align: center;
-      padding: 32px 20px;
-      font-size: 0.85rem;
-      color: #868e96;
-    }
-    a { color: #e94560; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+           max-width: 720px; margin: 40px auto; padding: 0 20px;
+           color: #333; line-height: 1.7; }
+    h1   { color: #1a3a7c; border-bottom: 2px solid #1a3a7c; padding-bottom: 8px; }
+    h2   { color: #1a3a7c; margin-top: 32px; }
+    p    { margin: 8px 0; }
+    ul   { margin: 8px 0; padding-left: 20px; }
+    .last-updated { color: #888; font-size: 14px; margin-bottom: 32px; }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>🙏 Holy Screen</h1>
-  <p>Privacy Policy</p>
-</header>
+<h1>Privacy Policy – HolyScreen</h1>
+<p class="last-updated">Last updated: June 3, 2026</p>
 
-<main>
+<h2>1. Overview</h2>
+<p>
+  HolyScreen ("we", "our", or "the app") is a free Android application that displays
+  Bible verses on your lock screen. We are committed to protecting your privacy.
+  <strong>This app does not collect, store, or transmit any personal information.</strong>
+</p>
 
-  <section>
-    <div class="highlight">
-      Holy Screen <strong>does not collect or transmit any personal information to external servers.</strong><br>
-      All data stays on your device, and the app works completely offline.
-    </div>
-  </section>
+<h2>2. Information We Do Not Collect</h2>
+<p>We do not collect:</p>
+<ul>
+  <li>Personal identification information (name, email address, phone number, etc.)</li>
+  <li>Device identifiers or advertising IDs</li>
+  <li>Location data</li>
+  <li>Usage analytics or crash reports</li>
+  <li>Any data that is transmitted to external servers</li>
+</ul>
+<p>All user preferences and custom Bible verses are stored <strong>locally on your device only</strong>
+   using Android SharedPreferences and local file storage.</p>
 
-  <section>
-    <h2><span class="num">1</span> Overview</h2>
-    <p>This Privacy Policy explains what information is involved when you use Holy Screen (the "App") and how it is handled.</p>
-    <p>The developer respects your privacy and complies with applicable data protection laws.</p>
-    <ul>
-      <li>App name: Holy Screen</li>
-      <li>Package ID: com.holyscreen.daily</li>
-      <li>Effective date: May 1, 2026</li>
-    </ul>
-  </section>
+<h2>3. Permissions Used</h2>
+<ul>
+  <li>
+    <strong>SET_WALLPAPER / SET_WALLPAPER_HINTS</strong> –
+    Required to set the lock screen wallpaper with Bible verse text.
+  </li>
+  <li>
+    <strong>READ_EXTERNAL_STORAGE / READ_MEDIA_IMAGES</strong> –
+    Required only if you choose a photo from your gallery as a background image.
+    The selected image is copied to the app's private storage and the original is not modified.
+  </li>
+  <li>
+    <strong>RECEIVE_BOOT_COMPLETED</strong> –
+    Used to reschedule the automatic lock screen update after the device restarts.
+  </li>
+  <li>
+    <strong>POST_NOTIFICATIONS (Android 13+)</strong> –
+    Used solely for background service notifications required by Android OS for foreground workers.
+  </li>
+</ul>
 
-  <section>
-    <h2><span class="num">2</span> Information We Collect <span class="badge">None</span></h2>
-    <p>Holy Screen does <strong>not</strong> collect any of the following:</p>
-    <ul>
-      <li>Personal identifiers (name, email address, phone number, etc.)</li>
-      <li>Location data</li>
-      <li>Camera, microphone, or contacts access</li>
-      <li>Advertising identifiers (ADID / IDFA)</li>
-      <li>Usage statistics or analytics data</li>
-    </ul>
-  </section>
+<h2>4. Third-Party Services</h2>
+<p>
+  HolyScreen does not integrate any third-party SDKs, advertising networks, analytics services,
+  or social media platforms.
+</p>
 
-  <section>
-    <h2><span class="num">3</span> Data Stored on Your Device</h2>
-    <p>To provide its features, the App stores the following data locally on your device only. This data is never transmitted externally.</p>
-    <ul>
-      <li><strong>Your Bible verses:</strong> The scripture text you add for display on the lock screen (stored in Hive DB, on-device only)</li>
-      <li><strong>App settings:</strong> Font size, background color, verse rotation interval, etc. (stored in SharedPreferences, on-device only)</li>
-      <li><strong>Daily recommendation history:</strong> Index numbers of verses shown today — used to prevent same-day duplicates, automatically cleared the next day (SharedPreferences)</li>
-    </ul>
-  </section>
+<h2>5. Children's Privacy</h2>
+<p>
+  This app does not knowingly collect any information from children under the age of 13.
+  Since no personal data is collected from any user, the app is safe for all ages.
+</p>
 
-  <section>
-    <h2><span class="num">4</span> App Permissions and Their Purpose</h2>
-    <ul>
-      <li><strong>SET_WALLPAPER:</strong> Used solely to apply Bible verse images to the lock screen and home screen wallpaper</li>
-      <li><strong>READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE:</strong> Used only when you choose a photo from your gallery as a background image</li>
-      <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Used to restore lock screen settings automatically after the device restarts</li>
-      <li><strong>SCHEDULE_EXACT_ALARM:</strong> Used to update the displayed verse at precise intervals (e.g., every 1 minute, 1 hour, or 24 hours) as configured by the user</li>
-      <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:</strong> Used to prevent verse updates from being skipped due to battery-saving mode restrictions</li>
-    </ul>
-    <p>No permission is used for any purpose beyond what is described above.</p>
-  </section>
+<h2>6. Changes to This Policy</h2>
+<p>
+  We may update this Privacy Policy from time to time. Any changes will be reflected on this page
+  with an updated "Last updated" date.
+</p>
 
-  <section>
-    <h2><span class="num">5</span> Third-Party Sharing &amp; External Transmission <span class="badge">None</span></h2>
-    <p>Holy Screen contains no third-party SDKs for advertising, analytics, or tracking.</p>
-    <p>The App does not use internet permissions and never transmits user data to any external server.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">6</span> Children's Privacy</h2>
-    <p>Holy Screen does not knowingly collect personal information from children under 13. Because no personal data is collected at all, the App is safe for users of all ages.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">7</span> Data Deletion</h2>
-    <p>Uninstalling the App from your device permanently deletes all locally stored data (verse list, settings, etc.).</p>
-    <p>You can also clear app data at any time via <em>Device Settings → Apps → Holy Screen → Storage → Clear Data</em>.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">8</span> Changes to This Policy</h2>
-    <p>If this policy is updated, the changes will be communicated through an app update and the effective date on this page will be revised accordingly.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">9</span> Contact</h2>
-    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-    <p>📧 <a href="mailto:drawlitest@gmail.com">drawlitest@gmail.com</a></p>
-  </section>
-
-</main>
-
-<footer>
-  <p>© 2026 Holy Screen &nbsp;·&nbsp; Last updated: May 1, 2026</p>
-</footer>
+<h2>7. Contact</h2>
+<p>
+  If you have any questions about this Privacy Policy, please contact us at:<br>
+  <a href="mailto:drawlitest@gmail.com">drawlitest@gmail.com</a>
+</p>
 
 </body>
 </html>
